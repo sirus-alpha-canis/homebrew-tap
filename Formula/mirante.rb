@@ -11,7 +11,6 @@ class Mirante < Formula
     url "https://github.com/sirus-alpha-canis/mirante/releases/download/v0.1.0/mirante-0.1.0-x86_64-apple-darwin.tar.gz"
     sha256 "6fe2c4e0a73edd831291bc63e0168909751a256a081a876e5f80140122d13278"
   end
-  version "0.1.0"
   license "Apache-2.0"
 
   livecheck do
