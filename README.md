@@ -23,11 +23,19 @@ Mirante runs Claude Code and/or the Codex CLI, which must be installed and logge
 If you installed Mirante from source before (`scripts/install.sh`, which links into
 `~/.local/bin`), run its `scripts/uninstall.sh` first so only one copy is on your `PATH`.
 
+Homebrew loads formulae from a third-party tap only when you trust them or name them in
+full. `brew install sirus-alpha-canis/tap/mirante` names it in full; to let a plain
+`brew upgrade` include it too, trust it once:
+
+```bash
+brew trust --formula sirus-alpha-canis/tap/mirante
+```
+
 ## Upgrade
 
 ```bash
 brew update
-brew upgrade mirante
+brew upgrade sirus-alpha-canis/tap/mirante
 mirante daemon restart      # once no task is running, so the new daemon takes over
 ```
 
